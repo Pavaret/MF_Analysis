@@ -54,7 +54,7 @@ install.packages(c("ggplot2", "dplyr", "gprofiler2"))
 
 ## Data Access
 
-The sequencing data and associated files are available in the NCBI SRA repository under [PRJNA1077753](https://www.ncbi.nlm.nih.gov/sra/PRJNA1077753). Download this data to reproduce the analyses.
+The sequencing data is available in the NCBI SRA repository under [PRJNA1077753](https://www.ncbi.nlm.nih.gov/sra/PRJNA1077753). Download this data to reproduce the analyses.
 
 ## Running the Analysis
 
