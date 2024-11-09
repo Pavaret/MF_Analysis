@@ -21,11 +21,11 @@ This project offers a genomic insight into the Thai *Macaca fascicularis* using 
 ## Repository Structure
 
 The repository includes:
-- **Scripts**: Python and R scripts for generating figures as listed below.
-  - `Figure1.py`, `Figure2.py`, `Figure3.py`, `Figure4.py`: Python scripts for figures
-  - `Figure5.R`: R script for Figure 5
-  - `main.py`: Main script to run all figure generation modules in sequence
-- **Data**: Data files are not included in this repository but can be accessed as described in the "Data Access" section.
+- **Scripts**:
+  - `Variant_Analyser.sh`: Main bash script to run the analysis pipeline, calling Python and R scripts in sequence.
+  - `main.py`: Python script that organizes functions for generating figures from data files.
+  - `Figure1.py`, `Figure2.py`, `Figure3.py`, `Figure4.py`: Python scripts for generating individual figures.
+  - `Figure5.R`: R script for functional enrichment analysis in Figure 5.
 
 ## Requirements
 
@@ -58,10 +58,10 @@ The sequencing data and associated files are available in the NCBI SRA repositor
 
 ## Running the Analysis
 
-To reproduce the figures described in the manuscript, you can use `main.py`, which integrates and runs all the individual scripts in sequence.
+To reproduce the figures described in the manuscript, you can use `Variant_Analyser.sh`, which integrates and runs all the individual scripts in sequence.
 
 ```bash
-python main.py
+bash Variant_Analyser.sh
 ```
 
 This command will execute each of the scripts to produce Figures 1 through 5.
